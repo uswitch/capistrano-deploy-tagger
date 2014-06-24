@@ -100,4 +100,7 @@ Capistrano::Configuration.instance(:must_exist).load do
     set :branch, tag_name
   end
 
+  task :ec2_instance do
+    automatic
+  end
 end
